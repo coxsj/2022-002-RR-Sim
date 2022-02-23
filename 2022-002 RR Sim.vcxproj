@@ -19,12 +19,28 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Location.cpp" />
+    <ClCompile Include="src\RollingStock.cpp" />
+    <ClCompile Include="src\Inventory.cpp" />
+    <ClCompile Include="src\DemandManager.cpp" />
+    <ClCompile Include="src\Schematic.cpp" />
+    <ClCompile Include="src\Schedule.cpp" />
     <ClCompile Include="src\Control.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\TrainBuilder.cpp" />
+    <ClCompile Include="src\TrackSegment.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Location.h" />
+    <ClInclude Include="src\RollingStock.h" />
+    <ClInclude Include="src\Inventory.h" />
+    <ClInclude Include="src\DemandManager.h" />
     <ClInclude Include="dependencies\util_console\include\util_console.h" />
+    <ClInclude Include="src\Schematic.h" />
+    <ClInclude Include="src\Schedule.h" />
     <ClInclude Include="src\Control.h" />
+    <ClInclude Include="src\TrainBuilder.h" />
+    <ClInclude Include="src\TrackSegment.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
