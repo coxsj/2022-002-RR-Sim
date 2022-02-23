@@ -13,7 +13,7 @@ void Control::getUserInput() {
 
 }
 void Control::initControl() {
-	controlText.setHlen(20);
+	controlText.setHlen(35);
 	controlText.setVlen(3);
 }
 void Control::loadSchedule() {
