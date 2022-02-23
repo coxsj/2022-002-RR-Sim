@@ -4,9 +4,11 @@
 #include <vector>
 #include <string>
 
+#include "Control.h"
 #include "util_console.h"
 
-int main() {
 
-	std::cout << "Hello world";
+int main() {
+	Control con;
+	con.runSim();
 }
