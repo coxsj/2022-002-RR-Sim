@@ -1,5 +1,9 @@
 #include "TrainBuilder.h"
 
-void TrainBuilder::run() {
+namespace RRSIM {
+
+	void TrainBuilder::run() {
+
+	}
 
 }

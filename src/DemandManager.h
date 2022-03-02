@@ -1,8 +1,12 @@
 #pragma once
-class DemandManager
-{
 
-public:
-	void run();
-};
+namespace RRSIM {
 
+	class DemandManager
+	{
+
+	public:
+		void run();
+	};
+
+}

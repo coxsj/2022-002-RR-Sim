@@ -1,30 +1,36 @@
 #pragma once
 
-#include "Location.h"
+namespace RRSIM {
 
-class RollingStock
-{
-protected:
-	std::shared_ptr<Location> locationPtr;
-
-public:
-	RollingStock();
-	virtual ~RollingStock();
+	class RollingStock
+	{
+	protected:
 
 
-};
+	public:
+		RollingStock();
+		virtual ~RollingStock();
 
-class Locomotive : public RollingStock
-{
-public:
-	Locomotive();
-	~Locomotive() override = default;
 
-};
+	};
 
-class Railcar : public RollingStock
-{
-public:
-	Railcar();
-	~Railcar() override = default;
-};
+	class Locomotive : public RollingStock
+	{
+	public:
+		Locomotive();
+		~Locomotive() override = default;
+
+	};
+
+	class Railcar : public RollingStock
+	{
+		//RailcarType type;
+		bool isMTY;
+		int destID;		//When car gets new assignment, set destID
+		int originID;	//When car reaches its destination, set originID to current(destination)
+	public:
+		Railcar() {}
+		~Railcar() override = default;
+	};
+
+}

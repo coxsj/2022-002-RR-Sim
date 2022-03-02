@@ -1,8 +1,12 @@
 #include "Schedule.h"
 
-void Schedule::display() {
+namespace RRSIM {
 
-}
-void Schedule::load() {
+	void Schedule::display() {
+
+	}
+	void Schedule::load() {
+
+	}
 
 }

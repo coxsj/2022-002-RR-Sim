@@ -1,5 +1,9 @@
 #include "DemandManager.h"
 
-void DemandManager::run() {
+namespace RRSIM {
+
+	void DemandManager::run() {
+
+	}
 
 }

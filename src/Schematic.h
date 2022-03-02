@@ -1,15 +1,19 @@
 #pragma once
 
 #include "Location.h"
-#include "TrackSegment.h"
 
-class Schematic
-{
-	std::vector<const Location*> timetable;	//A list of locations in the schematic
+namespace RRSIM {
 
-public:
-	void addTrackSegment(TrackSegment& newTrackSegment);
-	void display();
-	void load();
-};
+	class Schematic
+	{
+		std::vector<Location> locations;	//A list of locations in the schematic
 
+	public:
+		void addLocation(const Location& newLocaton);
+		bool build();
+		bool buildFromSeed();
+		void display();
+		void load();
+	};
+
+}

@@ -9,6 +9,6 @@
 
 
 int main() {
-	Control con;
+	RRSIM::Control con;
 	con.runSim();
 }
